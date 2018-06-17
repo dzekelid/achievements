@@ -1,42 +1,72 @@
 ---
 name: Facebook
 x-slug: facebook
-description: Facebook is an online social networking service that allows its users
-  to connect with friends and family as well as make new connections. It provides
-  its users with the ability to create a profile, update information, add images,
-  send friend requests, and accept requests from other users. Its features include
-  status update, photo tagging and sharing, and more.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/facebook_2015_logo_detail.png
+description: Create an account or log into Facebook. Connect with friends, family
+  and other people you know. Share photos and videos, send messages and get updates.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "3"
 tags: Achievements
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-17"
+modified: "2018-06-17"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Facebook Get User Achievements
+- name: Facebook Post Application Achievements
   x-api-slug: facebook
-  description: User Achievements
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/facebook_2015_logo_detail.png
-  humanURL: https://facebook.com
-  baseURL: https://graph.facebook.com//v3.0//&#123;user-id&#125;/achievements
+  description: Registers an achievement for the application
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
+  humanURL: http:///business
+  baseURL: https://graph.facebook.com////{application}/achievements
+  tags: Application,Achievements
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-openapi.md
+- name: Facebook Delete Application Achievements
+  x-api-slug: facebook
+  description: Unregisters an achievement for the application
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
+  humanURL: http:///business
+  baseURL: https://graph.facebook.com////{application}/achievements
+  tags: Application,Achievements
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-openapi.md
+- name: Facebook Post User Achievements
+  x-api-slug: facebook
+  description: Posts an achievement for the user
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
+  humanURL: http:///business
+  baseURL: https://graph.facebook.com////{user}/achievements
   tags: User,Achievements
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/123userid125achievements-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/123userid125achievements-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-openapi.md
+- name: Facebook Delete User Achievements
+  x-api-slug: facebook
+  description: Deletes an achievement for the user
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
+  humanURL: http:///business
+  baseURL: https://graph.facebook.com////{user}/achievements
+  tags: User,Achievements
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-delete-openapi.md
 - name: Facebook
   x-api-slug: facebook
-  description: Facebook is an online social networking service that allows its users
-    to connect with friends and family as well as make new connections. It provides
-    its users with the ability to create a profile, update information, add images,
-    send friend requests, and accept requests from other users. Its features include
-    status update, photo tagging and sharing, and more.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/facebook_2015_logo_detail.png
-  humanURL: https://facebook.com
-  baseURL: https://graph.facebook.com//v3.0
+  description: Create an account or log into Facebook. Connect with friends, family
+    and other people you know. Share photos and videos, send messages and get updates.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
+  humanURL: http:///business
+  baseURL: https://graph.facebook.com//
   tags: Achievements
   properties:
   - type: x-openapi-spec
@@ -58,6 +88,8 @@ x-common:
   url: https://www.facebook.com/business/news/rss/
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/facebook
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/facebook
 - type: x-developer
   url: https://developers.facebook.com/
 - type: x-forum
@@ -90,6 +122,10 @@ x-common:
   url: https://www.facebook.com/about/government_requests
 - type: x-twitter
   url: https://twitter.com/facebook
+- type: x-website
+  url: http:///business
+- type: x-website
+  url: http://facebook.com
 - type: x-website
   url: https://facebook.com
 include: []
