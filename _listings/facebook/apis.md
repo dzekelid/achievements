@@ -7,14 +7,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebo
 x-kinRank: "9"
 x-alexaRank: "3"
 tags: Achievements
-created: "2018-08-24"
-modified: "2018-08-24"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Facebook
-  x-api-slug: facebook
-  description: connect-to-the-social-network-with-the-graph-api-
+- name: Facebook - Post Application Achievements
+  x-api-slug: applicationachievements-post
+  description: Registers an achievement for the application
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
   baseURL: https://graph.facebook.com//
@@ -27,9 +27,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-openapi.md
-- name: Facebook
-  x-api-slug: facebook
-  description: connect-to-the-social-network-with-the-graph-api-
+- name: Facebook - Delete Application Achievements
+  x-api-slug: applicationachievements-delete
+  description: Unregisters an achievement for the application
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
   baseURL: https://graph.facebook.com//
@@ -38,17 +38,13 @@ apis:
     Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
     Data API, Relative StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-openapi.md
-- name: Facebook
-  x-api-slug: facebook
-  description: connect-to-the-social-network-with-the-graph-api-
+- name: Facebook - Post User Achievements
+  x-api-slug: userachievements-post
+  description: Posts an achievement for the user
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
   baseURL: https://graph.facebook.com//
@@ -57,21 +53,13 @@ apis:
     Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
     Data API, Relative StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-openapi.md
-- name: Facebook
-  x-api-slug: facebook
-  description: connect-to-the-social-network-with-the-graph-api-
+- name: Facebook - Delete User Achievements
+  x-api-slug: userachievements-delete
+  description: Deletes an achievement for the user
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
   baseURL: https://graph.facebook.com//
@@ -80,132 +68,10 @@ apis:
     Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
     Data API, Relative StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-post-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/applicationachievements-delete-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-post-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/userachievements-delete-openapi.md
-- name: Facebook
-  x-api-slug: facebook
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https://graph.facebook.com//
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Conversation Messages (stream)
-  x-api-slug: facebook-get-conversation-messages-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Group Feed (stream)
-  x-api-slug: facebook-get-group-feed-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Life Event (stream)
-  x-api-slug: facebook-get-life-event-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Live Veo (stream)
-  x-api-slug: facebook-get-live-veo-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Message Shares (stream)
-  x-api-slug: facebook-get-message-shares-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Object Comments (stream)
-  x-api-slug: facebook-get-object-comments-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get Object Likes (stream)
-  x-api-slug: facebook-get-object-likes-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get User Conversations (stream)
-  x-api-slug: facebook-get-user-conversations-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
-- name: Facebook Get User Photos (stream)
-  x-api-slug: facebook-get-user-photos-stream
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https:///
-  tags: Achievements
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/achievements/master/_listings/facebook/openapi.md
 x-common:
 - type: x-android-sdk
   url: https://developers.facebook.com/docs/android/share
