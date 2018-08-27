@@ -1,14 +1,93 @@
----
 swagger: "2.0"
 x-collection-name: Facebook
 x-complete: 1
 info:
   title: Facebook
   version: 1.0.0
+host: graph.facebook.com
+basePath: /
 schemes:
 - http
 produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /{application}/achievements:
+    post:
+      summary: Post Application Achievements
+      description: Registers an achievement for the application
+      operationId: postApplicationAchievements
+      x-api-path-slug: applicationachievements-post
+      parameters:
+      - in: query
+        name: achievement
+        description: Unique URL to the achievement
+      - in: path
+        name: application
+        description: Represents the ID of the application object
+      - in: query
+        name: display_order
+        description: Order of this achievement as it shows up in the achievement stories
+          UI (low to high)
+      responses:
+        200:
+          description: OK
+      tags:
+      - Application
+      - Achievements
+    delete:
+      summary: Delete Application Achievements
+      description: Unregisters an achievement for the application
+      operationId: deleteApplicationAchievements
+      x-api-path-slug: applicationachievements-delete
+      parameters:
+      - in: query
+        name: achievement
+        description: Unique URL to the achievement
+      - in: path
+        name: application
+        description: Represents the ID of the application object
+      responses:
+        200:
+          description: OK
+      tags:
+      - Application
+      - Achievements
+  /{user}/achievements:
+    post:
+      summary: Post User Achievements
+      description: Posts an achievement for the user
+      operationId: postUserAchievements
+      x-api-path-slug: userachievements-post
+      parameters:
+      - in: query
+        name: achievement
+        description: The unique URL of the achievement which the user achieved
+      - in: path
+        name: user
+        description: Represents the ID of the user object
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - Achievements
+    delete:
+      summary: Delete User Achievements
+      description: Deletes an achievement for the user
+      operationId: deleteUserAchievements
+      x-api-path-slug: userachievements-delete
+      parameters:
+      - in: query
+        name: achievement
+        description: The unique URL of the achievement you wish to delete
+      - in: path
+        name: user
+        description: Represents the ID of the user object
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - Achievements
